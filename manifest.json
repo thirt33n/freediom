@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Freediom",
+    "version": "1.0.0",
+    "description": "Unlock Paid Medium articles using google cache",
+    "author": "Siddharth Pradeep",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Free Medium articles"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    
+    "background": {
+        "scripts_worker": ["background.js"]
+        
+    },
+    "icons": {
+        "16": "Icons/image.png",
+        "32": "Icons/image.png",
+        "48": "Icons/image.png",
+        "128":"Icons/image.png"
+       },
+       "host_permissions": [
+        "https://*.medium.com/*"
+      ]
+    
+    
+    
+    }
